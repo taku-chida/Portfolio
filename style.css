@@ -1,0 +1,381 @@
+body{
+  background-color: rgb(241,226,190,.6);
+}
+.container{
+  max-width: 1450px;
+  margin: 0 auto;
+  font-size: 17px;
+}
+/* ここからheader 画像 */ 
+.header{
+  background-image: url(images/P1000238.JPG);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 102px;
+}
+/* ここからheader title */
+.h-title{
+  color: rgb(243,109,13);
+  text-shadow: 3px 3px 5px black;
+  font-size: 90px;
+  font-family: Times New Roman;
+  font-style: oblique;
+  margin: 0 0 100px 20px;
+  padding-top: 10px;
+  text-align: left;
+}
+/* ここからheader nav */
+.h-menu{
+  letter-spacing: -.4em;
+  margin: 0 10px 100px 10px;
+}
+.h-list{
+  position: relative;
+  display: inline-block;
+  width: calc(100%/5);
+  height: 65px;
+}
+.h-list:hover{
+  transition: .7s;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 5px;
+}
+.h-l-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+/* ここからheader h2*/
+.h-h2{
+  color: rgb(243,109,13);
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.7;
+  font-family: Times New Roman;
+  font-style: oblique;
+  margin: 30px 0;
+}
+
+/*.effect-fadein{
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+.effect-fadein-2{
+  animation-name: fadein-2;
+  animation-duration: 2s;
+}
+@keyframes fadein{
+  from{
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  }
+  @keyframes fadein-2{
+  from{
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}*/
+
+/* ここからmain */
+.main{
+  margin: 0 15px;
+}
+/* ここからAbout */ 
+.m-h2{
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.7;
+  font-family: Times New Roman;
+  font-style: oblique;
+  margin: 80px 0 50px 0;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+.m-p{
+  color: #555;
+  text-align: center;
+  /*font-family:"ヒラギノ明朝 ProN W3";*/
+  line-height: 1.5;
+  margin-bottom: 30px; /* Worksのみ対応 */
+}
+/* ここからprofile */
+.m-h3{
+  text-align: center;
+  font-size: 35px;
+  margin: 50px 0;
+  font-family: Times New Roman;
+  font-style: oblique;
+}
+.prof{
+  display: flex;
+  align-items: center;
+}
+.prof-img{
+  transform:translateX(120px)
+}
+.m-img{
+  max-width: 100%;
+  height: auto;
+}
+.prof-p{
+  line-height: 1.5;
+  color: #555;
+  margin: 0 80px 0 200px;
+}
+
+/* スクロールフェードインDown用 .animation対応 */
+.fadeInDown{
+  -webkit-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-animation-duration:2s;
+  -ms-animation-duration:2s;
+  animation-duration:2s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important;
+ }
+ @-webkit-keyframes fadeInDown {
+  0% { 
+    opacity: 0;
+     -webkit-transform: translateX(20px); 
+    }
+  100% { 
+    opacity: 1; 
+    -webkit-transform: translateX(0); 
+  }
+ }
+ @keyframes fadeInDown {
+  0% { 
+    opacity: 0; 
+    -webkit-transform: translateX(20px); 
+    -ms-transform: translateX(20px); 
+    transform: translateY(400px); 
+  }
+  100% { 
+    opacity: 1; 
+    -webkit-transform: translateX(0); 
+    -ms-transform: translateX(0); 
+    transform: translateX(0); 
+  }
+ }
+/* スクロールフェードインDown用 END */
+
+/* ここからskill */
+.m-p-2{
+  color: #555;
+  text-align: center;
+  margin: 50px 0 20px 0;
+  line-height: 1.5;
+}
+.effect-fade{
+  opacity: 0;
+  transform: translate(0,100px);
+  transition: all 700ms;
+}
+.effect-fade.effect-scroll{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.skill-container{
+  display: flex;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.skill-img{
+  width: 50%;
+  height: auto;
+}
+.skill-img-2{
+  width: 40%;
+  height: auto;
+}
+.skill-img-3{
+  width: 80%;
+  height: auto;
+}
+/* ここからwork */
+.work-a ul{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.work-a img:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+.work-img{
+  width: 50%;
+  height: auto;
+}
+.work-p{
+  color: #555;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.work-p-2{
+  color: #555;
+  line-height: 1.5;
+}
+.work-p-3{
+  color: #555;
+  line-height: 1.5;
+}
+/* ここからツイッター */
+.contact-a{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-img{
+  width: 10%;
+  border-radius: 70px;
+  margin-bottom: 20px;
+}
+/* topに戻るボタン */
+.page-top{
+  margin: 0;
+  padding: 0;
+}
+.page-top p{
+	margin: 80px 0;
+	padding: 0;
+	position: fixed;
+	right: 16px;
+	bottom: 16px;
+}
+.move-page-top{
+	display: block;
+  border: 1px solid #aaa;
+	width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: #555;
+  font-size: 30px;
+}
+.move-page-top:hover{
+  color: #555;
+  text-decoration: none;
+}
+/* ここからお問い合わせフォーム */
+.m-th,.m-th2,.m-td{
+  padding: 15px;
+}
+.m-td{
+  display: flex;
+  line-height: 1.7;
+}
+th{
+  width: 25%;
+}
+.m-th2{
+  vertical-align: middle;
+}
+input{
+  width: 70%;
+}
+textarea{
+  width: 90%;
+  height: 150px;
+}
+.button{
+  width: 15%;
+  margin-bottom: 50px;
+}
+.m-table{
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+form{
+  text-align: center;
+}
+/* ここからfooter */
+.footer{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  background-color: black;
+  padding: 16px 0;
+  line-height: 2;
+}
+/* ここからトップアニメーション */
+.start{
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start-h2{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+  width: 400px;
+  color: black;
+  text-shadow: 5px 5px 5px #aaa;
+  font-size: 70px;
+  font-family: Times New Roman;
+  font-style: oblique;
+  text-align: center;
+  line-height: 1.7;
+}
+@media screen and (min-width: 560px){
+  .h-list-2{
+    display: none;
+  }
+}
+@media screen and (max-width: 959px){
+  .header{
+    padding-bottom: 150px;
+  }
+  .h-title{
+    font-size: 70px;
+  }
+  .h-h2{
+    font-size: 45px;
+  }
+  .m-h2{
+    font-size: 45px;
+  }
+  .prof{
+    flex-direction: column;
+  }
+  .prof-img{
+    transform:translateX(0);
+    text-align: center;
+  }
+  .m-img{
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .prof-p{
+    margin: 0 100px;
+  }
+  .button{
+    width: 20%;
+  }
+  .contact-img{
+    width: 15%;
+  }
+}
