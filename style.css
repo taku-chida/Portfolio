@@ -129,7 +129,7 @@ body{
   transform:translateX(120px)
 }
 .m-img{
-  max-width: 75%;
+  max-width: 100%;
   height: auto;
 }
 .prof-p{
@@ -365,7 +365,7 @@ form{
     text-align: center;
   }
   .m-img{
-    max-width: 40%;
+    max-width: 70%;
     height: auto;
     margin-bottom: 50px;
   }
