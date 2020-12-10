@@ -349,6 +349,7 @@ nav.globalMenuSp {
   top: 0;
   left: 0;
   background: #fff;
+  opacity: .9;
   color: #000;
   text-align: center;
   transform: translateY(-100%);
@@ -388,12 +389,12 @@ nav.globalMenuSp.active {
   transform: translateY(0%);
 }
 
-.navToggle {
+.nav-toggle {
   display: block;
   position: fixed;    /* bodyに対しての絶対位置指定 */
   right: 13px;
   top: 12px;
-  width: 42px;
+  width: 48px;
   height: 51px;
   cursor: pointer;
   z-index: 3;
@@ -401,30 +402,30 @@ nav.globalMenuSp.active {
   text-align: center;
 }
 
-.navToggle span {
+.nav-toggle span {
   display: block;
   position: absolute;    /* .navToggleに対して */
-  width: 30px;
+  width: 33px;
   border-bottom: solid 3px #eee;
   -webkit-transition: .35s ease-in-out;
   -moz-transition: .35s ease-in-out;
   transition: .35s ease-in-out;
-  left: 6px;
+  left: 7px;
 }
 
-.navToggle span:nth-child(1) {
-  top: 9px;
+.nav-toggle span:nth-child(1) {
+  top: 15px;
 }
 
-.navToggle span:nth-child(2) {
-  top: 18px;
+.nav-toggle span:nth-child(2) {
+  top: 25px;
 }
 
-.navToggle span:nth-child(3) {
-  top: 27px;
+.nav-toggle span:nth-child(3) {
+  top: 35px;
 }
 
-.navToggle span:nth-child(4) {
+.nav-toggle span:nth-child(4) {
   border: none;
   color: #eee;
   font-size: 9px;
@@ -433,27 +434,31 @@ nav.globalMenuSp.active {
 }
 
 /* 最初のspanをマイナス45度に */
-.navToggle.active span:nth-child(1) {
-    top: 18px;
-    left: 6px;
+.nav-toggle.active span:nth-child(1) {
+    top: 25px;
+    left: 7px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
  
 /* 2番目と3番目のspanを45度に */
-.navToggle.active span:nth-child(2),
-.navToggle.active span:nth-child(3) {
-    top: 18px;
+.nav-toggle.active span:nth-child(2),
+.nav-toggle.active span:nth-child(3) {
+    top: 25px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
+nav.globalMenuSp a {
+  text-decoration: none;
+}
+
 /* 12/10追加ここまで */
 
 @media screen and (min-width: 560px){
-  .h-list-2{
+  .h-list-2,.nav-toggle {
     display: none;
   }
 }
