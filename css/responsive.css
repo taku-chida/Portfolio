@@ -6,50 +6,51 @@
 .nav-toggle {
   display: block;
   position: absolute;
-  right: 10px;
+  /*right: 10px;
   top: -200px;
   width: 51px;
   height: 48px;
-  border: 1px solid #aaa;
+  border: 1px solid white;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 5px;*/
+  z-index: 1;
 }
 .nav-toggle span {
   display: block;
-  position: absolute;
-  width: 30px;
-  border-bottom: solid 4px #ccc;
-  left: 10px;
+  position: fixed;
+  width: 33px;
+  border-bottom: solid 4px white;
+  left: 447px;
 }
 .nav-toggle span:nth-child(1) {
-  top: 14px;
+  top: 42px;
 }
 .nav-toggle span:nth-child(2) {
-  top: 24px;
+  top: 55px;
 }
 .nav-toggle span:nth-child(3) {
-  top: 34px;
+  top: 68px;
 }
 /* 最初のspanをマイナス45度に */
 .nav-toggle.active span:nth-child(1) {
-  top: 25px;
-  left: 6px;
+  top: 55px;
+  left: 441px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  width: 75%;
-  border-bottom: solid 3px #ccc;
+  width: 9%;
+  border-bottom: solid 3px black;
 }
 /* 2番目と3番目のspanを45度に */
 .nav-toggle.active span:nth-child(2),
 .nav-toggle.active span:nth-child(3) {
-  top: 25px;
-  left: 6px;
+  top: 55px;
+  left: 441px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   transform: rotate(45deg);
-  width: 75%;
-  border-bottom: solid 3px #ccc;
+  width: 9%;
+  border-bottom: solid 3px black;
 }
 /* ここまでfrog */
 
@@ -64,7 +65,7 @@
 }
 /* ここは不明 */
 .open #nav-content{
-  opacity: 1;
+  opacity: .8;
   pointer-events: auto;
   transition: opacity .8s ease;
 }
