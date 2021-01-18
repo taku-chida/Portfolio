@@ -398,7 +398,7 @@ nav.globalMenuSp.active {
   height: 51px;
   cursor: pointer;
   z-index: 3;
-  background: #666;
+  background: black;
   text-align: center;
 }
 
